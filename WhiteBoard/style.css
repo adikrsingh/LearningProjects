@@ -1,0 +1,156 @@
+*{
+    box-sizing: border-box;
+}
+
+body,html{
+    margin: 0px;
+}
+
+.tools{
+    background: aliceblue;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.content{
+    height: calc(100vh - 100px);
+    background: white;
+}
+
+
+.toolbox {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    height: 80%;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0 1rem 3rem rgb(0, 0, 0, 0.175);
+}
+
+.tool{
+    height: 50px;
+    position: relative;
+}
+.tool img {
+    height: 100%;
+}
+
+.tool-options{
+    height: 100px;
+    background: limegreen;
+    width: 160px;
+    position: absolute;
+    top: 60px;
+    border-radius: 10px;
+    left: -60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.pencil-color{
+    border: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around
+}
+.pencil-color div {
+    height: 30px;
+    width: 30px;
+    border-radius: 20px
+}
+.red{
+    background: red;
+}
+.yellow {
+    background: yellow;
+}
+.blue {
+    background: blue;
+}
+.black {
+    background: black;
+}
+.hide {
+    display: none;
+}
+.active-tool {
+    background: lightgray;
+    height: 60px;
+    padding: 7px;
+    border-radius: 25px;
+}
+
+.sticky{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    border: 1px solid lightcoral;
+    width: 240px;
+}
+
+.sticky-header {
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: maroon;
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+
+.minimize {
+    height: 23px;
+    background: tomato;
+    width: 22px;
+    border-radius: 10px;
+}	
+
+.close {
+    height: 23px;
+    width: 23px;
+    background: darkorange;
+    border-radius: 10px;
+}
+
+.sticky-box {
+    border: none;
+    height: 100%;
+    width: 100%
+}
+
+.img{
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes tool{
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    50%{
+        opacity: 0.5;
+        /* //transform: scale(0.5); */
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.add-animation{
+    animation-name: tool;
+    animation-duration:1s;
+}
+.tool-button{
+    left: 29px;
+    position: fixed;
+}
+.fas{
+    background: white;
+    border-radius: 20px;
+}

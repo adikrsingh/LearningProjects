@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.chat-container{
+    background: lightblue;
+    height: 500px;
+    width: 500px;
+    margin: auto;
+    background-image: url("https://i.pinimg.com/originals/58/c3/33/58c33377dfcbb3022493dec49d098b02.jpg");
+    background-size: contain;
+}
+
+.chat-input-div{
+    position: absolute;
+    top: 30%;
+    left: 40%;
+}
+.join-chat{
+    color: white;
+    background: lightblue;
+    width: 100px;
+    cursor: pointer;
+}
+
+.chat-box{
+    height: 90%;
+    font-family: 'STIX Two Math', serif;
+    overflow: auto;
+}
+
+.chat{
+    max-width: 300px;
+    min-width: 100px;
+    clear: both;
+    padding: 5px;
+    margin: 5px;
+}
+
+.chat-name{
+    font-weight: bold;
+}
+.left{
+    background: lightcoral;
+    float: left;
+    color: lightyellow;
+}
+.right{
+    background: rgb(162, 196, 162);
+    float: right;
+    color: whitesmoke;
+}
+.join{
+    width: 90%;
+    background: dodgerblue;
+    height: 40px;
+    border-radius: 29px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    color: white;
+    margin-top: 10px;
+}
+.leave{
+    width: 90%;
+    background: red;
+    height: 40px;
+    border-radius: 29px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    color: white;
+    margin-top: 10px;
+}
+
+.chat-input{
+    background: white;
+    width: 90%;
+    border-radius: 10px;
+    margin: auto;
+    display: flex;
+    height: 8%;
+    justify-content: space-around;
+    align-items: center;
+}
+.chat-input input{
+    outline: none;
+    border: none;
+    width: 85%;
+    /* border-bottom-left-radius:10px;
+    background-color: lightgray; */
+}
+.fas {
+    color: lightblue;
+    justify-content: center;
+
+}
+
+.chat-content{
+    height: 100%;
+}
+
+.hide{
+    display: none !important;
+}
+.send{
+
+}
